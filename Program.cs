@@ -1,4 +1,7 @@
+using VideoGameReviewSite.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<VideoGameContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
